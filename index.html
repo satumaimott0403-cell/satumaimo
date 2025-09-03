@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>わくわくペーパードライバースクール｜“運転が楽しくなる”出張マンツーマン教習</title>
+<style>
+:root{--brand:#38bdf8;--brand-2:#7dd3fc;--ink:#0f172a;--muted:#64748b;--ring:#bae6fd;--radius:16px;--h2:clamp(22px,6vw,34px);--tiny:clamp(12px,3.2vw,13px);--hero-trim-bottom:4%}
+*{box-sizing:border-box}html,body{margin:0;overflow-x:hidden}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,"BIZ UDPGothic",sans-serif;color:var(--ink);line-height:1.65}
+a{color:#0369a1;text-decoration:none}img,svg{max-width:100%;display:block;height:auto}
+header{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid #e2e8f0;z-index:50}
+header .wrap{max-width:980px;margin:0 auto;padding:6px 12px}
+.logo{display:flex;align-items:center;gap:8px;user-select:none;-webkit-user-select:none}
+.logo-penguin{width:46px;height:46px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.logo-name{font-weight:900;letter-spacing:.02em;font-size:clamp(20px,5.2vw,30px);line-height:1.02;color:#0f172a;
+  -webkit-text-stroke:.6px rgba(255,255,255,.75);text-shadow:0 1px 0 rgba(255,255,255,.9),0 2px 10px rgba(2,132,199,.22)}
+.logo-name .small{font-size:.9em;opacity:.95}.logo-name .nowrap{white-space:nowrap}
+.btn{border:1px solid #cfe6ff;background:#f8fdff;border-radius:10px;padding:8px 12px;cursor:pointer}.btn:active{transform:translateY(1px)}
+.nav-apply{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:999px;border:1px solid var(--ring);
+  background:linear-gradient(180deg,#ecfeff,#dff3ff);color:#0369a1;font-weight:900;box-shadow:0 4px 12px rgba(2,132,199,.14);
+  font-size:clamp(12px,3.4vw,14px);letter-spacing:.01em}.nav-apply svg{opacity:.85}
+body.has-fixed-header{padding-top:76px}
+.section-title{font-size:var(--h2);margin:8px 0 16px;display:flex;align-items:center;gap:12px;font-weight:900}
+.section-title .bar{width:10px;height:30px;border-radius:999px;background:linear-gradient(180deg,#38bdf8,#c7ecff);box-shadow:inset 0 0 0 1px #bfe0ff}
+.wrap{max-width:980px;margin:0 auto;padding:12px}.card{position:relative;border:1px solid #e2e8f0;border-radius:16px;padding:14px;background:#fff}[id]{scroll-margin-top:116px}
+.hero{background:linear-gradient(180deg,#f0faff,#fff)}.hero .wrap{display:grid;gap:10px}
+.hero-media{position:relative;overflow:hidden;border-radius:18px;box-shadow:0 10px 30px rgba(2,132,199,.12);aspect-ratio:16/9;background:#fff}
+.hero-image{width:100%;height:100%;object-fit:contain;object-position:center center;clip-path:inset(0 0 var(--hero-trim-bottom) 0)}
+.hero-badge{position:absolute;left:8px;right:8px;top:8px;background:rgba(255,255,255,.96);border:1px solid #bae6fd;border-radius:14px;padding:10px 12px;
+  font-weight:900;color:#0369a1;font-size:clamp(14px,4.4vw,22px);line-height:1.35;box-shadow:0 10px 24px rgba(2,132,199,.18);text-align:center}
+.reasons{display:grid;gap:12px}.reason{display:flex;gap:14px;align-items:center;padding:16px;border-left:6px solid --brand;background:#f8fdff;border-radius:14px;border-left-color:var(--brand)}
+.reason .icon{width:120px;height:120px;border-radius:16px;display:grid;place-items:center;background:#fff;border:1px solid #bae6fd;overflow:hidden;flex:0 0 auto;padding:6px}
+.reason .icon img{width:100%;height:100%;object-fit:contain;object-position:center}
+.reason strong{display:block;font-size:clamp(18px,5.2vw,24px);font-weight:900}
+.pricing{display:grid;gap:10px;grid-template-columns:1fr}@media (min-width:760px){.pricing{grid-template-columns:repeat(2,1fr)}}
+.price.card{padding:12px;cursor:pointer}.price .amount{font-size:22px;font-weight:800;color:#0369a1;margin-top:2px}
+.price h3{font-size:clamp(18px,5.2vw,22px);color:#0f172a;font-weight:900;margin:0 0 4px}
+.p1{background:linear-gradient(180deg,#f7fdff,#fff);border-color:#dff3ff}.p2{background:linear-gradient(180deg,#eef8ff,#fff);border-color:#d4ecff}
+.p3{background:linear-gradient(180deg,#e6f3ff,#fff);border-color:#c9e6ff}.p4{background:linear-gradient(180deg,#ddeeff,#fff);border-color:#bfe0ff}
+.p5{background:linear-gradient(180deg,#d4e9ff,#fff);border-color:#b5daff}.p6{background:linear-gradient(180deg,#cfe5ff,#fff);border-color:#b1d3ff}
+#calendar{overflow:hidden}.calendar-head{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.calendar-head div{font-size:var(--tiny);text-align:center;color:#475569;background:#f1f5f9;border-radius:10px;padding:6px 0}
+.calendar-days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.day{display:flex;flex-direction:column;gap:2px;align-items:center;justify-content:center;border:1px solid var(--ring);background:#fff;border-radius:10px;aspect-ratio:1/1;padding:4px}
+.day .d{font-weight:800}.day .s{font-size:var(--tiny)}.day.open{background:#ecfeff;border-color:#bae6fd;color:#0369a1}.day.taken{background:#fee2e2;border-color:#fecaca;color:#991b1b}
+#reserve-form label{display:grid;grid-template-columns:minmax(88px,max-content) 1fr;align-items:center;column-gap:10px;white-space:nowrap;margin:8px 0}
+#reserve-form input,#reserve-form select,#reserve-form textarea{width:100%;padding:10px;border-radius:12px;border:1px solid #e2e8f0;background:#fff;font:inherit}
+#reserve-dialog .cta .btn{padding:14px 18px;font-size:16px;border-radius:14px;min-width:180px}
+#pack-ui .pack-item{border:1px solid #e2e8f0;border-radius:12px;padding:10px;margin-top:8px;background:#fbfdff}
+#pack-ui .pack-title{font-weight:800;margin-bottom:6px;color:#0f172a}
+#pack-ui .pack-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media (max-width:540px){#pack-ui .pack-grid{grid-template-columns:1fr}}#pack-ui label{white-space:normal}
+#pack-ui .end-hint{font-size:12px;color:#475569;margin-top:4px}
+#page{transition:filter .2s ease}body.modal-open{overflow:hidden;height:100vh}body.modal-open #page{filter:blur(4px);pointer-events:none}
+.stats-grid{display:grid;grid-template-columns:1fr;gap:12px}@media (min-width:700px){.stats-grid{grid-template-columns:1.1fr .9fr}}.piechart{width:160px;height:160px;border-radius:50%}
+details{border:1px solid #e2e8f0;border-radius:12px;padding:10px;background:#fff}
+</style></head><body>
+<div id="page">
+<header id="site-header">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+    <div class="logo" title="長押しで管理モード">
+      <img class="logo-penguin" src="assets/img/logo_penguin.png" width="46" height="46" alt="サイトロゴ：ペンギン"/>
+      <span class="logo-name"><span class="small">わくわく</span><br><span class="nowrap">ペーパードライバー</span><br>スクール</span>
+    </div>
+    <nav>
+      <a class="nav-apply" href="#reserve" title="教習申し込み">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17l4 4 4-4"/><path d="M12 12v9"/><path d="M20 7h-7"/><path d="M3 7h7"/></svg> 教習申し込み
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero"><div class="wrap"><div class="hero-media">
+  <img class="hero-image" src="assets/img/hero_penguin_car.png" width="1280" height="720" alt="車を運転するペンギンのイラスト"/>
+  <div class="hero-badge">「運転が楽しくなる」出張教習</div>
+</div></div></section>
+
+<section class="wrap" id="features"><h2 class="section-title"><span class="bar"></span>選ばれる理由</h2>
+<div class="reasons">
+  <div class="reason"><div class="icon"><img src="assets/img/hero_penguin_car.png" width="120" height="120" alt="ご自宅まで無料で出張"></div>
+    <div><strong>ご自宅まで無料で出張</strong><span class="tiny">玄関前や最寄りの広い道からスタート。移動の負担なし。</span></div></div>
+  <div class="reason"><div class="icon"><img src="assets/img/reason_choice.png" width="120" height="120" alt="マイカー/レンタカー/カーシェアOK"></div>
+    <div><strong>マイカー／レンタカー／カーシェアOK</strong><span class="tiny">実際に使う車・ルートで練習できるから実戦的。</span></div></div>
+  <div class="reason"><div class="icon"><img src="assets/img/reason_one_on_one.png" width="120" height="120" alt="安心できる教習環境"></div>
+    <div><strong>安心できる教習環境</strong><span class="tiny">人通りの少ない道から始めるなど、安心した環境でゆっくり進めます。</span></div></div>
+  <div class="reason"><div class="icon"><img src="assets/img/reason_teaching.png" width="120" height="120" alt="あなたの目標を叶える教習"></div>
+    <div><strong>あなたの目標を叶える教習</strong><span class="tiny">ご要望に合わせてレッスンを設計します。</span></div></div>
+</div></section>
+
+<section class="wrap" id="price"><h2 class="section-title"><span class="bar"></span>料金プラン</h2>
+<div class="pricing">
+  <div class="card price p1" data-plan="trial90" tabindex="0"><h3>お試しプラン（90分）</h3><div class="amount">9,900円（税込）</div><p class="tiny">運転感覚のリセットと現状診断／駐車 or 狭路の重点練習</p></div>
+  <div class="card price p2" data-plan="2h" tabindex="0"><h3>2時間コース（120分）</h3><div class="amount">15,000円（税込）</div><p class="tiny">狭路・駐車＋生活ルート／右折レーン・合流の基礎</p></div>
+  <div class="card price p3" data-plan="3h" tabindex="0"><h3>3時間コース（180分）</h3><div class="amount">19,800円（税込）</div><p class="tiny">車庫入れ→市街地→合流まで／ドラレコ振り返り可</p></div>
+  <div class="card price p4" data-plan="4h" tabindex="0"><h3>4時間コース（240分）</h3><div class="amount">26,400円（税込）</div><p class="tiny">基礎〜市街地をじっくり強化／目的地往復や高速も</p></div>
+  <div class="card price p5" data-plan="6h" tabindex="0"><h3>6時間コース（1日集中）</h3><div class="amount">36,500円（税込）</div><p class="tiny">3h＋休憩＋3hの集中／基礎〜市街地〜高速まで一通り</p></div>
+  <div class="card price p6" data-plan="pack2" tabindex="0" id="pack-card"><h3>3時間パックコース</h3>
+    <div class="pack-line" data-pack="pack2" style="display:flex;justify-content:space-between;align-items:center;margin:6px 0"><div>3時間×2日</div><div class="amount">35,600円（税込）</div></div>
+    <div class="pack-line" data-pack="pack3" style="display:flex;justify-content:space-between;align-items:center;margin:6px 0"><div>3時間×3日</div><div class="amount">52,800円（税込）</div></div>
+    <div class="pack-line" data-pack="pack4" style="display:flex;justify-content:space-between;align-items:center;margin:6px 0"><div>3時間×4日</div><div class="amount">69,600円（税込）</div></div>
+  </div>
+</div></section>
+
+<section class="wrap contact" id="reserve"><h2 class="section-title"><span class="bar"></span>空き状況カレンダー（かんたん予約）</h2>
+<div class="card" style="margin-bottom:16px;position:relative"><div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+  <div><button class="btn" id="prev-month">← 前の月</button><button class="btn" id="next-month">次の月 →</button><span id="ym-label" class="tiny" style="margin-left:8px"></span></div>
+</div><div id="calendar" style="margin-top:12px"></div></div></section>
+
+<section class="wrap" id="voices"><h2 class="section-title"><span class="bar"></span>お客様の声</h2>
+<div class="card"><p>受講者さまの体験談をまとめました（年代・性別・ブランク年数・地域別に掲載）。</p><div class="cta"><a class="btn" href="voices.html" target="_blank" rel="noopener">お客様の声をもっと見る</a></div></div></section>
+
+<section class="wrap" id="faq"><h2 class="section-title"><span class="bar"></span>よくある質問</h2>
+<details><summary>自宅まで本当に無料で来てもらえますか？</summary><div style="margin-top:6px">はい、出張費は無料です（東京・埼玉・千葉・神奈川・茨城・群馬）。一部遠方はご相談ください。</div></details>
+<details><summary>マイカーでも教習できますか？レンタカーでも大丈夫？</summary><div style="margin-top:6px">どちらも対応しています。日常的に使う車・ルートで練習できるのがメリットです。</div></details>
+<details><summary>高速教習は可能ですか？</summary><div style="margin-top:6px">可能です。別途、通行料金などの実費はご負担ください。</div></details>
+<details><summary>夜間や土日祝の予約はできますか？</summary><div style="margin-top:6px">営業時間は8:00〜22:00です。土日祝・夜間（18時以降）は+500円/日となります。</div></details>
+<details><summary>キャンセルや日程変更はできますか？</summary><div style="margin-top:6px">前日までのご連絡をお願いしています。当日キャンセルは1コマ分の料金がかかる場合があります。</div></details>
+<details><summary>支払い方法は？</summary><div style="margin-top:6px">現金・各種QR決済・クレジットに対応予定です。詳細は予約確定時にご案内します。</div></details>
+</section>
+
+</div>
+<!-- Netlify フォーム（使わない場合は残してOK／邪魔なら削除可） -->
+<form name="reservation" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="bot-field"/>
+  <input type="text" name="date"/><input type="text" name="name"/><input type="text" name="name_kana"/>
+  <input type="text" name="tel"/><input type="text" name="address"/><input type="text" name="vehicle"/><input type="text" name="car_type"/>
+  <input type="text" name="plan"/><input type="text" name="time_start"/><input type="text" name="time_end"/>
+  <input type="text" name="pack_days"/><input type="text" name="day2_date"/><input type="text" name="day2_time_start"/><input type="text" name="day2_time_end"/>
+  <input type="text" name="day3_date"/><input type="text" name="day3_time_start"/><input type="text" name="day3_time_end"/>
+  <input type="text" name="day4_date"/><input type="text" name="day4_time_start"/><input type="text" name="day4_time_end"/><textarea name="note"></textarea>
+</form>
+
+<dialog id="reserve-dialog" style="border:none;border-radius:14px;padding:0;max-width:640px;box-shadow:0 10px 30px rgba(2,132,199,.2)">
+  <form id="reserve-form" method="dialog" novalidate style="padding:18px 18px 14px; position:relative">
+    <button type="button" id="dlg-back" class="btn" style="position:absolute;top:10px;right:12px;">戻る</button>
+    <h3 style="margin:0 0 10px">予約内容</h3>
+    <div id="reserve-day" class="tiny" style="margin-bottom:10px;color:#475569"></div>
+    <label>プラン
+      <select name="plan">
+        <option value="trial90">お試しプラン（90分）9,900円</option>
+        <option value="2h">2時間コース（120分）</option>
+        <option value="3h">3時間コース（180分）</option>
+        <option value="4h">4時間コース（240分）</option>
+        <option value="6h">6時間コース（1日集中）</option>
+        <option value="pack2">3時間パック（2日）</option>
+        <option value="pack3">3時間パック（3日）</option>
+        <option value="pack4">3時間パック（4日）</option>
+      </select>
+    </label>
+    <label id="single-date-row">日付<input type="date" name="date"></label>
+    <div id="simple-time">
+      <label>開始時間<select name="time_start"></select></label>
+      <div id="auto-end" class="tiny" style="margin-top:4px;color:#475569">終了予定時刻：未定</div>
+    </div>
+    <div id="pack-ui"></div>
+    <label>お名前<input name="name"></label>
+    <label>フリガナ<input name="name_kana"></label>
+    <label>電話番号<input name="tel"></label>
+    <label>住所<input name="address"></label>
+    <label>車の種類<select name="car_type"><option value="自家用車">自家用車</option><option value="レンタカー/カーシェア">レンタカー／カーシェア</option></select></label>
+    <label>ご要望・備考欄<textarea name="note" rows="3"></textarea></label>
+    <div class="cta" style="margin-top:12px">
+      <button type="button" class="btn" style="background:#38bdf8;border-color:#7dd3fc;color:#083344" data-action="confirm">この内容で予約</button>
+      <button type="button" class="btn" id="cancel-dialog">キャンセル</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="thanks-dialog" style="border:none;border-radius:14px;padding:18px;max-width:480px;box-shadow:0 10px 30px rgba(2,132,199,.2)">
+  <h3 style="color:#10b981;margin:0 0 8px">ご予約ありがとうございました！</h3>
+  <p style="margin:0 0 10px">担当よりご案内させていただきます。返信まで今しばらくお待ちください。</p>
+  <div class="cta"><button class="btn" id="thanks-close" style="background:#38bdf8;border-color:#7dd3fc;color:#083344">閉じる</button></div>
+</dialog>
+
+<script>
+(function(){
+  function adjustHeaderOffset(){const h=document.getElementById('site-header')?.offsetHeight||72;document.body.classList.add('has-fixed-header');document.body.style.paddingTop=(h+8)+'px'}
+  window.addEventListener('load',adjustHeaderOffset,{once:true});window.addEventListener('resize',()=>requestAnimationFrame(adjustHeaderOffset));
+
+  let scrollY=0;function lockScroll(){scrollY=window.scrollY;document.body.classList.add('modal-open');document.body.style.position='fixed';document.body.style.top=`-${scrollY}px`;document.body.style.left='0';document.body.style.right='0';document.body.style.width='100%'}
+  function unlockScroll(){document.body.classList.remove('modal-open');const y=-parseInt(document.body.style.top||'0');document.body.style.position='';document.body.style.top='';document.body.style.left='';document.body.style.right='';document.body.style.width='';window.scrollTo(0,y||0)}
+
+  const STORAGE_STATE='pds_calendar_state_local_only_v1';
+  const calEl=document.getElementById('calendar'),ymLabel=document.getElementById('ym-label'),prevBtn=document.getElementById('prev-month'),nextBtn=document.getElementById('next-month');
+  const dlg=document.getElementById('reserve-dialog'),form=document.getElementById('reserve-form'),dayInfo=document.getElementById('reserve-day');
+  const cancelBtn=document.getElementById('cancel-dialog'),backBtn=document.getElementById('dlg-back'),thanks=document.getElementById('thanks-dialog'),thanksClose=document.getElementById('thanks-close');
+  const endLabel=document.getElementById('auto-end');const logoEl=document.querySelector('.logo');
+
+  let isAdmin=false;
+  const PIN='2468'; // ← ここで固定（Netlify不要）
+
+  let view=new Date();view.setDate(1);
+  const pad=(n)=>String(n).padStart(2,'0');
+  const load=()=>{try{return JSON.parse(localStorage.getItem(STORAGE_STATE)||'{}')}catch(e){return{}}};
+  const save=(s)=>localStorage.setItem(STORAGE_STATE,JSON.stringify(s));
+  const ensureMonth=(s,ym)=>{if(!s[ym]) s[ym]={}; return s};
+  const isPast=(y,m,d)=> new Date(y,m-1,d,23,59,59).getTime() < Date.now();
+
+  function render(){
+    const y=view.getFullYear(),m=view.getMonth()+1,ym=y+'-'+pad(m);
+    ymLabel.textContent=y+'年'+m+'月';
+    const state=load(); ensureMonth(state,ym);
+    const first=new Date(y,m-1,1), last=new Date(y,m,0).getDate(), startWeek=(first.getDay()+6)%7;
+    let html='<div class="calendar-head">'+['月','火','水','木','金','土','日'].map(h=>`<div>${h}</div>`).join('')+'</div><div class="calendar-days">';
+    for(let i=0;i<startWeek;i++) html+='<div></div>';
+    for(let d=1; d<=last; d++){
+      const key=pad(d);
+      const cell=state[ym][key]||{status:'open'};
+      const past=isPast(y,m,d);
+      const status=past?'booked':cell.status;
+      const isTaken=status!=='open';
+      const label=isTaken?'満':'予約可';
+      const klass=isTaken?'day taken':'day open';
+      html+=`<button class="${klass}" data-d="${key}" ${past?'disabled':''}><div class="d">${d}</div><div class="s">${label}</div></button>`;
+    }
+    html+='</div>';
+    calEl.innerHTML=html;
+    calEl.querySelectorAll('button[data-d]').forEach(btn=>btn.addEventListener('click',()=>{
+      const dd=btn.getAttribute('data-d');
+      if(isAdmin){ toggleAdminDay(dd); } else { openDialogWithDate(y,m,dd); }
+    }));
+  }
+
+  function setStatus(iso,status){
+    const ym=iso.slice(0,7),dd=iso.slice(8,10);
+    const s=load(); ensureMonth(s,ym);
+    s[ym][dd]={status}; save(s);
+  }
+  function toggleAdminDay(dd){
+    const y=view.getFullYear(),m=view.getMonth()+1; const ym=y+'-'+pad(m);
+    const s=load(); ensureMonth(s,ym);
+    const cur=s[ym][dd]?.status||'open';
+    s[ym][dd]={status: cur==='open'?'taken':'open'};
+    save(s); render();
+  }
+
+  // === 隠し管理者モード: ロゴ長押し → PIN ===
+  let pressTimer=null;
+  logoEl.addEventListener('pointerdown',()=>{pressTimer=setTimeout(()=>{const pin=prompt('管理者PINを入力してください');if(!pin)return; if(pin===PIN){isAdmin=true;alert('管理モードON：日付タップで「予約可／満」切替できます。');render();} else {alert('PINが違います');}},800)});
+  ['pointerup','pointerleave','pointercancel'].forEach(evt=>logoEl.addEventListener(evt,()=>clearTimeout(pressTimer)));
+
+  // 予約関連
+  function minutesForPlan(p){return p==='trial90'?90:p==='2h'?120:p==='3h'||/^pack/.test(p)?180:p==='4h'?240:p==='6h'?420:120}
+  function hhmm2min(t){const [H,M]=t.split(':').map(Number);return H*60+M}
+  function min2hhmm(m){m=(m+1440)%1440;const H=Math.floor(m/60),M=m%60;return String(H).padStart(2,'0')+':'+String(M).padStart(2,'0')}
+  function calcEnd(s,p){return min2hhmm(hhmm2min(s)+minutesForPlan(p))}
+  function latestStartForPlan(p){return 1320 - minutesForPlan(p)}
+  function buildStartOptions(plan,sel){const earliest=480,latest=latestStartForPlan(plan);let html='<option value="">-- 選択 --</option>';for(let v=earliest;v<=latest;v+=30){const t=min2hhmm(v);html+=`<option value="${t}">${t}</option>`}sel.innerHTML=html}
+  function updateSimpleEnd(){const plan=form.querySelector('select[name="plan"]');const sel=form.querySelector('select[name="time_start"]');if(!sel||!plan)return;endLabel.textContent=sel.value?('終了予定時刻：'+calcEnd(sel.value,plan.value)):'終了予定時刻：未定'}
+  function buildPackUI(days,plan){const root=document.getElementById('pack-ui');root.innerHTML='';for(let i=1;i<=days;i++){const item=document.createElement('div');item.className='pack-item';item.dataset.day=String(i);const title=document.createElement('div');title.className='pack-title';title.textContent=i+'日目';const grid=document.createElement('div');grid.className='pack-grid';const dateBox=document.createElement('label');dateBox.append('日付');const dateIn=document.createElement('input');dateIn.type='date';dateIn.name='day'+i+'_date';dateBox.appendChild(dateIn);const timeBox=document.createElement('label');timeBox.append('開始時間');const sel=document.createElement('select');sel.name='day'+i+'_time_start';timeBox.appendChild(sel);buildStartOptions(plan,sel);const end=document.createElement('div');end.className='end-hint';end.dataset.end='day'+i+'_time_end';end.textContent='終了予定時刻：未定';grid.appendChild(dateBox);grid.appendChild(timeBox);item.appendChild(title);item.appendChild(grid);item.appendChild(end);sel.addEventListener('change',()=>{end.textContent=sel.value?('終了予定時刻：'+calcEnd(sel.value,plan)):'未定'});root.appendChild(item)}}
+  function onPlanChange(){const plan=form.querySelector('select[name="plan"]').value;const isPack=/^pack[234]$/.test(plan);document.getElementById('simple-time').style.display=isPack?'none':'block';const dr=document.getElementById('single-date-row');if(dr)dr.style.display=isPack?'none':'grid';if(isPack){const n=Number(plan.replace('pack',''));buildPackUI(n,plan)}else{document.getElementById('pack-ui').innerHTML=''}const sel=form.querySelector('select[name="time_start"]');buildStartOptions(plan,sel);sel.value='';updateSimpleEnd()}
+  function openDialogCommon(){if(!dlg.open)dlg.showModal();lockScroll()}function openDialogWithDate(y,m,dd){form.dataset.ym=y+'-'+String(m).padStart(2,'0');form.dataset.dd=dd;dayInfo.textContent=y+'年'+m+'月'+Number(dd)+'日';onPlanChange();openDialogCommon()}function openDialogWithPlan(plan){form.dataset.ym='';form.dataset.dd='';const sel=form.querySelector('select[name="plan"]');sel.value=plan||sel.value;onPlanChange();openDialogCommon()}
+  document.querySelectorAll('.price').forEach(card=>{const plan=card.getAttribute('data-plan');card.addEventListener('click',()=>openDialogWithPlan(plan));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDialogWithPlan(plan)}})});document.getElementById('pack-card')?.addEventListener('click',e=>{const line=e.target.closest('[data-pack]');if(line){e.stopPropagation();openDialogWithPlan(line.getAttribute('data-pack'))}},true);
+  document.getElementById('cancel-dialog')?.addEventListener('click',e=>{e.preventDefault();dlg.close('cancel')});document.getElementById('dlg-back')?.addEventListener('click',e=>{e.preventDefault();dlg.close('cancel')});dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close('cancel')});
+  dlg.addEventListener('close',()=>{unlockScroll();form.reset();document.getElementById('pack-ui').innerHTML='';endLabel.textContent='終了予定時刻：未定';form.dataset.ym='';form.dataset.dd=''});thanksClose?.addEventListener('click',()=>{try{thanks.close()}catch(e){}});
+
+  function postToNetlify(data){try{const payload=new URLSearchParams({'form-name':'reservation',...data});return fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:payload.toString()})}catch(e){return Promise.resolve()}}
+  function calcEndFromStart(start,plan){const mins=(plan==='trial90'?90:plan==='2h'?120:plan==='4h'?240:plan==='6h'?420:180);const mm=(parseInt(start.slice(0,2))*60+parseInt(start.slice(3)))+mins;const H=String(Math.floor(mm/60)%24).padStart(2,'0'), M=String(mm%60).padStart(2,'0');return H+':'+M}
+
+  form.addEventListener('submit',(e)=>e.preventDefault());
+  form.querySelector('select[name="plan"]').addEventListener('change', onPlanChange);
+  form.querySelector('select[name="time_start"]').addEventListener('change', updateSimpleEnd);
+  form.querySelector('[data-action="confirm"]').addEventListener('click', async ()=>{
+    const fd=new FormData(form); const name=(fd.get('name')||'').trim(); const tel=(fd.get('tel')||'').trim();
+    let ym=form.dataset.ym, dd=form.dataset.dd;
+    if(!name||!tel){ alert('お名前と電話番号を入力してください'); return; }
+    const plan=(fd.get('plan')||'').toString(); const payload={date:'',name,tel,plan};
+    const isPack=/^pack[234]$/.test(plan); const dates=[];
+
+    if(isPack){
+      const n=Number(plan.replace('pack','')); payload.pack_days=String(n);
+      for(let i=1;i<=n;i++){const item=document.querySelector('.pack-item[data-day="'+i+'"]'); const dateIn=item?.querySelector('input[type="date"]'); const sel=item?.querySelector('select'); const iso=(dateIn?.value||''); const start=(sel?.value||''); if(!iso||!start){ alert(i+'日目の日付と時間を入力してください'); return; } const end=calcEndFromStart(start, plan); payload['day'+i+'_date']=iso; payload['day'+i+'_time_start']=start; payload['day'+i+'_time_end']=end; dates.push(iso); if(i===1){ payload.date=iso; payload.time_start=start; payload.time_end=end; } }
+    } else {
+      let iso='';
+      if(ym && dd){ iso=ym+'-'+dd; } else { const di=form.querySelector('input[name="date"]'); if(di && di.value) iso=di.value; }
+      if(!iso){ alert('日付を選択してください'); return; }
+      const sel=form.querySelector('select[name="time_start"]'); if(!sel.value){ alert('開始時間を選択してください'); return; }
+      const end=calcEndFromStart(sel.value, plan); payload.date=iso; payload.time_start=sel.value; payload.time_end=end; dates.push(iso);
+    }
+
+    try{ await postToNetlify(payload); }catch(e){}
+
+    // 即時「満」反映（複数日も）
+    dates.forEach(iso=>setStatus(iso,'taken'));
+    render();
+
+    dlg.close('confirm'); thanks.showModal();
+  });
+
+  // 月移動（ボタン＆スワイプ）
+  let touchX=null,touchY=null; calEl.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX;touchY=e.changedTouches[0].clientY}); calEl.addEventListener('touchend',e=>{if(touchX===null)return;const dx=e.changedTouches[0].clientX-touchX,dy=e.changedTouches[0].clientY-touchY;touchX=null;if(Math.abs(dx)>40&&Math.abs(dy)<30){if(dx<0){view.setMonth(view.getMonth()+1)}else{view.setMonth(view.getMonth()-1)}render()}});
+  prevBtn.addEventListener('click',()=>{view.setMonth(view.getMonth()-1);render()}); nextBtn.addEventListener('click',()=>{view.setMonth(view.getMonth()+1);render()});
+
+  render();
+})();
+</script>
+</body></html>
